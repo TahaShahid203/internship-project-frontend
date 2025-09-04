@@ -14,7 +14,7 @@ export default function PDFEditor() {
     formData.append("file", file);
     formData.append("prompt", prompt);
 
-    const res = await fetch("http://localhost:5000/api/edit-pdf", {
+    const res = await fetch("https://internship-project-backend-1-dafo.onrender.com/api/edit-pdf", {
       method: "POST",
       body: formData,
     });
